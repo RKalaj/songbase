@@ -1,0 +1,16 @@
+{% extends "home-base.html" %}
+
+{% block title %}
+Add Artists
+{% endblock %}
+
+{% block page_content %}
+<h1>Use the form to add an artist</h1>
+
+<form action="/artist/add" method="post">
+Add an artist<br>
+<input type="text" name="name"><br><br>
+<input type="text" name="about"><br><br>
+<input type="submit" value="Submit">
+</form>
+{% endblock %}
